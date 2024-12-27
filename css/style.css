@@ -23,3 +23,16 @@ body {
 .svg-text {
   overflow: visible;
 }
+
+.rect {
+  stroke: brown;
+  stroke-width: 10px;
+  fill: none;
+  stroke-dasharray: 700px;
+  stroke-dashoffset: 700px;
+  transition: all 0.5s ease-in-out;
+}
+
+.svg-rect:hover .rect {
+  stroke-dashoffset: 0;
+}
