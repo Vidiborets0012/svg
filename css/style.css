@@ -33,6 +33,14 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.svg-rect:hover .rect {
+.svg-rect:hover .rect,
+.svg-circle:hover .circle {
   stroke-dashoffset: 0;
 }
+
+.circle {
+  stroke-dasharray: 314;
+  stroke-dashoffset: calc(2 * 50 * 3.14); /*2*3.14*r = 314 */
+  transition: all 0.5s ease-in-out;
+}
+/* 314 */
