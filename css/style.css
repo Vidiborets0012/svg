@@ -34,7 +34,8 @@ body {
 }
 
 .svg-rect:hover .rect,
-.svg-circle:hover .circle {
+.svg-circle:hover .circle,
+.apple-whole:hover .apple-whole-path {
   stroke-dashoffset: 0;
 }
 
@@ -43,4 +44,21 @@ body {
   stroke-dashoffset: calc(2 * 50 * 3.14); /*2*3.14*r = 314 */
   transition: all 0.5s ease-in-out;
 }
-/* 314 */
+
+.apple-brand .apple-brand-path {
+  fill: greenyellow;
+  opacity: 0.5;
+}
+
+.apple-whole {
+  overflow: visible;
+}
+
+.apple-whole-path {
+  fill: none;
+  stroke: brown;
+  stroke-width: 10px;
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  transition: all 0.5s ease-in-out;
+}
