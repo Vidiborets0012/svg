@@ -87,3 +87,12 @@ body {
 .image-apple-1 {
   clip-path: url(#apple);
 }
+
+.polyline {
+  stroke-linejoin: round;
+}
+
+.line {
+  stroke-width: 40px;
+  stroke-linecap: round;
+}
